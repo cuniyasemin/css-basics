@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Tip Seçici (Element Seçici) */
+    p {
+      color: blue;
+    }
+
+    /* Sınıf Seçici */
+    .text {
+      color: green;
+    }
+
+    /* Nitelik Seçici */
+    p[title="sample"] {
+      color: yellow;
+    }
+
+    /* Psödo-sınıf Seçici */
+    p:first-child {
+      color: red;
+    }
+
+    /* ID Seçici */
+    #content p {
+      color: orange;
+    }
+
+    /* İç içe Seçiciler */
+    #content .theme .text {
+      color: brown;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content" class="theme">
+    <p class="text" title="sample">Bu bir örnektir.</p>
+    <p style="color: violet;">Bu bir satır içi stil örneğidir.</p>
+  </div>
+</body>
+
+</html>

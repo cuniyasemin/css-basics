@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seçici Örnekleri</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Element Seçici */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ID Seçici */
+    #intro {
+      color: darkblue;
+    }
+
+    /* Class Seçici */
+    .highlight {
+      background-color: lightyellow;
+    }
+
+    /* Gruplandırma */
+    header,
+    footer {
+      background-color: lightgrey;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    /* Descendant Selector */
+    .content h2 {
+      color: darkred;
+    }
+
+    /* Child Selector */
+    .content>p {
+      margin-left: 15px;
+    }
+
+    /* Adjacent Sibling Selector */
+    h2+p {
+      font-style: italic;
+    }
+
+    /* Psödo-Sınıf Seçici */
+    a:hover {
+      text-decoration: none;
+      color: green;
+    }
+
+    /* Psödo-Öğe Seçici */
+    p::first-line {
+      font-weight: bold;
+    }
+
+    /* Nitelik Seçici */
+    input[type="text"] {
+      padding: 5px;
+      border: 1px solid gray;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Merhaba Dünya!</h1>
+  </header>
+
+  <section class="content">
+    <h2>Alt Başlık</h2>
+    <p id="intro">Bu bir giriş paragrafıdır.</p>
+    <a href="#">
+      Bir link
+    </a>
+    <p>Diğer paragraf</p>
+    <input type="text" placeholder="Bir şeyler yaz...">
+
+    <ul>
+      <li class="highlight">Birinci öğe</li>
+      <li>İkinci öğe</li>
+      <li class="highlight">Üçüncü öğe</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Örnek Web Sitesi</p>
+  </footer>
+</body>
+
+</html>
